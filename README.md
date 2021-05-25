@@ -1,4 +1,4 @@
-# DataScience
+# Data Science
 Examples of data science projects.
 
 **On the Transference and Identification of Political Bias of Transformer-Generated Summaries of News Articles -** We train several transformer-based classification models to detect bias in political news articles, which is a typically difficult task at the document-level due to the different forms bias can take. After evaluating the efficacy of these architectures, we then apply transformer-based summarization models to news articles in our test data to generate summaries. We then apply the trained classification model to the generated summaries to label them as biased or neutral. Next, we compare the generated labels of the summaries to the generated and original labels of the original news articles to study whether bias is transferred from an original text to generated summaries. Transformer-based summarization was found to generally produce debiased summaries of biased texts, with abstractive summarization performing better than extractive summarization for the purpose of debiasing text in most cases.
