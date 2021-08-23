@@ -1,2 +1,15 @@
-# DataScience
-Examples of applied data science
+# Data Science
+Examples of data science projects.
+
+**On the Transference and Identification of Political Bias of Transformer-Generated Summaries of News Articles -** We train several transformer-based classification models to detect bias in political news articles, which is a typically difficult task at the document-level due to the different forms bias can take. After evaluating the efficacy of these architectures, we then apply transformer-based summarization models to news articles in our test data to generate summaries. We then apply the trained classification model to the generated summaries to label them as biased or neutral. Next, we compare the generated labels of the summaries to the generated and original labels of the original news articles to study whether bias is transferred from an original text to generated summaries. Transformer-based summarization was found to generally produce debiased summaries of biased texts, with abstractive summarization performing better than extractive summarization for the purpose of debiasing text in most cases.
+
+**The Effect of Reward Systems on Gameplay -** Many mobile apps and video games implement a system that rewards consumers for using the app/playing the game, often in the guise of something like a level or point system. For example, the longer a consumer uses an app or plays a game, they might be rewarded with more points or a level-up in order to motivate them to keep using the app/playing the game. These incentives are often intended to provide the player with positive experiences that promote increased engagement, and this style of reward system has even been implemented in educational applications in efforts to increase student engagement. The prevalence of this phenomenon raises some interesting questions. Do these reward systems cause consumers to use these apps more often? If so, does knowledge of these intended effects affect the efficacy of a reward system? In our study, we found no statistically significant evidence that reward systems affect gameplay time or engagement, and no statistically significant evidence that knowledge of the intended reward system affects gameplay time or engagement.
+
+**Analysis of Commuter Bike Trips in San Francisco -** We use publicly available data to simulate a business consultation regarding optimal membership deals for bike commuters in San Francisco.  By collecting the data using Google BigQuery and fetching it in SQL, we visualize and analyze the data in a Jupyter environment to identify trends and patterns
+
+**Topic Classification using Logistic Regression for Text Analysis -** An exploration of different statistical techniques to classify text.
+
+**Analysis and Modeling of Wikipedia Growth Data using Polynomial Regression -** This was an independent project inspired by my work with Wiki Education data and the Coleman Research Lab.  I wanted to see and predict the growth of Wikipedia over time, which can be quantified in several aspects: community size, physical memory size, article count, and so on.  By taking all of these into account, I was able to create a comprehensive model of Wikipedia's growth trajectory over time using polynomial modeling.
+
+**Data Science Glossary -** Currently work in progress.  This will ultimately become a one-stop guide to all terms used in data science.
+
