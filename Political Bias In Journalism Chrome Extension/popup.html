@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBnJ</title>
+    <style>
+
+        html {
+            height: 100%;
+        }
+        body {
+            width: 750px;
+            height: 550px;
+            border: 0;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            color: black;
+            font-size: 30px;
+            background-color: white;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont,
+            "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans",
+            "Droid Sans", "Helvetica Neue", sans-serif;
+        }
+
+        div.wrapper{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+            display: flex;
+            font-family: -apple-system, BlinkMacSystemFont,
+            "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans",
+            "Droid Sans", "Helvetica Neue", sans-serif;
+        }
+
+        div.topbar{
+            width: 100%;
+            height: 9%;
+            background-color: #cccccc;
+            position: absolute;
+            margin: 0 auto;
+            top: 0px;
+            padding-left: 2%;
+            padding-right: 5%;
+            padding-top: 0.8%;
+            font-size: 15pt;
+            display: inline;
+        }
+
+        div.content{
+            width: 100%;
+            height: 90%;
+            font-size: 40px;
+            font-style: normal;
+            top: 7%;
+            margin: 0 auto;
+            position: absolute;
+            text-align: left;
+            justify-content: left;
+        }
+
+        div.bias{
+            width: 100%;
+            height: 7%;
+            font-weight: bold;
+            font-size: 40px;
+            font-style: normal;
+            padding-left: 5%;
+            padding-bottom: 3%;
+            top: 7%;
+            margin: 0 auto;
+            position: absolute;
+            text-align: left;
+            justify-content: left;
+        }
+
+        div.bias-detail{
+            width: 90%;
+            height: 10%;
+            font-size: 15px;
+            padding-right: 5%;
+            padding-left: 5%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            top: 15%;
+            margin: 0 auto;
+            position: absolute;
+            text-align: left;
+            justify-content: left;
+            display: inline;
+        }
+
+        div.diagram{
+            width: 100%;
+            height: 7%;
+            font-weight: bold;
+            font-size: 40px;
+            font-style: normal;
+            top: 33%;
+            margin: 2% auto;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+        }
+
+        div.content-detail{
+            width: 90%;
+            height: 20%;
+            font-size: 14px;
+            font-style: normal;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 3%;
+            top: 60%;
+            position: absolute;
+            justify-content: center;
+            display: inline-flex;
+        }
+
+        div.detail{
+            padding-right: 1%;
+            padding-left: 1%;
+            width: 45%;
+        }
+        div.detail-header{
+            text-align: left; 
+            font-size: 13pt;
+            font-weight: 500;
+        }
+        div.sentence{
+            text-align: justify;
+        }
+        div.summary{
+            text-align: justify;
+        }
+        span.bias-color{
+            color: grey;
+            font-weight: bold;
+        }
+        span.source {
+            font-weight: 425;
+            color: black;
+        }
+        a {
+            color: black;
+        }
+        button.more {
+            background-color: #ddd;
+            border: none;
+            color: black;
+            padding: 4px 8px;
+            text-align: center;
+            font-size: 13px;
+            font-family: inherit;
+            margin: 1px 1px;
+            transition: 0.3s;
+        }
+
+        button.search {
+            background-color: #ddd;
+            border: none;
+            color: black;
+            padding: 4px 8px;
+            text-align: center;
+            font-size: 13px;
+            font-family: inherit;
+            margin: 1px 1px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #A14BAE;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class = "wrapper">
+        <div class = "topbar" tabindex="-1">PBnJ: Bringing the alternative perspective, one article at a time.</div>
+        <div class = "content">
+            <div class="bias" id="bias-score-is">Bias score is <span class="bias-color" id="score">not available.</span></div>
+            <div class="bias-detail">
+                <span id="bias-detail">PBnJ has </span><span class="bias-color" id="class">not classified this page</span>.
+                <span id="bias-detail-more" style="display: none;">Our model learns to score political bias based on publication-level bias classifications from <a href = "https://www.allsides.com/media-bias/media-bias-ratings">AllSides</a>. Higher scores represent greater confidence that the article is left or right-leaning compared to center. Visit our <a href = "https://thepbnjproject.wixsite.com/home/the-project">website</a> for more information on how our model works.</span>
+                <button type="button" class="more" id="learn-more">More</button>
+
+            </div>
+            <div class="diagram">
+                <canvas id = "diagram-canvas" width = "700" height = "75" style="background-image:url('images/scale_updated.png');"></canvas>
+            </div>
+            <div class = "content-detail"> 
+                <div class = "detail" id = "sentences">
+                    <div class = "detail-header" id = "analysis-header">Sentence-Level Analysis is not available.</div>
+                    <br>
+                    <div class = "sentence" id = "sentprop"> 
+                        <span class="" id="sentbiasprop1"></span> 
+                        <span class = "sentbiasis" id = "sentbiasis1"> </span>
+                        <span id = "sentproplabel1"></span>
+                        <br>
+                        <span class="" id="sentbiasprop2"></span> 
+                        <span class = "sentbiasis" id = "sentbiasis2"> </span>
+                        <span id = "sentproplabel2"></span>
+                        <br>
+                        <span class="" id="sentbiasprop3"></span> 
+                        <span class = "sentbiasis" id = "sentbiasis3"> </span>
+                        <span id = "sentproplabel3"></span>
+                    </div>
+                    <br>
+                    <div class = "detail-header" id = "bias-header"></div>
+                    <br>            
+                    <div class = "sentence" id = "sent1"> 
+                        <span class="sentbiasnum" id="sentbiasnum1"></span> 
+                        <span class="sentbiastext" id="sentbiastext1"></span>
+                    </div>
+                    <br>
+                    <div class = "sentence" id = "sent2">
+                        <span class="sentbiasnum" id="sentbiasnum2"></span> 
+                        <span class="sentbiastext" id="sentbiastext2"></span> 
+                    </div>
+                    <br>
+                    <div class = "sentence" id = "sent3">
+                        <span class="sentbiasnum" id="sentbiasnum3"></span> 
+                        <span class="sentbiastext" id="sentbiastext3"></span>
+                    </div>
+                    <br>
+                </div>
+                <div class = "detail" id="articles">
+                    <div class = "detail-header" id = "article-header">
+                        <button type="button" class="search" id="search">Search for alternative perspectives.</button>
+                    </div>
+                    <br>
+                    <div id = "article-body">
+                        <div id = "article-1"><span class="source" id = "source-1"></span><span class="title" id = "title-1"></span></div>
+                        <br>
+                        <div class="summary" id = "summary-1"></div>
+                        <br>
+                        <div id = "article-2"><span class="source" id = "source-2"></span><span class="title" id = "title-2"></span></div>
+                        <br>
+                        <div class="summary" id = "summary-2"></div>
+                        <br>
+                        <div id = "article-3"><span class="source" id = "source-3"></span><span class="title" id = "title-3"></span></div>
+                        <br>
+                        <div class="summary" id = "summary-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = "./popup_script.js"></script>
+</body>
+</html>
+

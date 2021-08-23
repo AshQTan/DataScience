@@ -1,0 +1,37 @@
+{
+    "name": "PBNJ",
+    "description": "Capstone Project",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "icons": {
+        "16": "./images/icons/PBNJ16.png",
+        "32": "./images/icons/PBNJ32.png",
+        "64": "./images/icons/PBNJ64.png"
+    },
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icons": {
+            "16": "./images/icons/PBNJ16.png",
+            "32": "./images/icons/PBNJ32.png",
+            "64": "./images/icons/PBNJ64.png"
+        }
+    },
+    "options_page": "./options.html",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "https://u2eedde0w9.execute-api.us-west-2.amazonaws.com/*",
+        "https://1tn5xbbrz0.execute-api.us-west-2.amazonaws.com/*",
+        "https://fotuh2doc8.execute-api.us-west-1.amazonaws.com/*",
+        "https://0z5mfmbfbd.execute-api.us-east-1.amazonaws.com/*"
+        ]
+    
+}
