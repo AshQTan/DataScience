@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Line Chart</title>
+  <link rel="stylesheet" href="textstyles.css">
+
+
+
+
+</head>
+<body>
+	
+
+<div class="row" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+ width:300px;
+    margin-right: 2%;
+        margin-top: 2%;
+    text-align: left; font: Calibri; display: inline-block;
+vertical-align: right;
+float: right;" ><br>
+
+
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font: Calibri" >
+
+  <a href = "index.html"> <img src="images/house.png" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+
+<!--   <p>Web Designer</p>
+ -->  
+   <span class="tooltiptext2">Home</span>
+
+</div>
+
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font: Calibri" >
+
+  <a href = "line_chart.html"> <img src="images/linechart.jpg" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+
+<!--   <p>Web Designer</p>
+ -->  
+   <span class="tooltiptext2">Line Chart</span>
+
+</div>
+
+
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font: Calibri" >
+  <a href = "maps.html"> <img src="images/world.png" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+<!--   <p>Boss man</p>
+ -->  
+    <span class="tooltiptext2">Maps</span>
+
+</div>
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font: Calibri" >
+  <a href = "bubble_chart.html"> <img src="images/bubbles.jpg" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+<!--   <p>Support</p>
+ -->  
+    <span class="tooltiptext2">Bubble Chart</span>
+</div>
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font-family: Calibri" >
+  <a href = "timeline.html"> <img src="images/timeline.jpg" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+<!--   <p>Fixer</p>
+ -->  
+    <span class="tooltiptext2">Timeline</span>
+
+</div>
+
+</div>
+
+
+
+
+<h3 style = "
+  padding-left: 3%;
+  padding-right: 3%; width: 800px; padding-top: 4%; text-align:left">Line Chart</h4>
+
+<div class = "description" style = "padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%; width: 800px; font-family: Verdana">
+Using the line chart below, compare the progress of various countries throughout the pandemic! Begin by selecting your countries of interest using the checkboxes in the table below. From there, you can select the variable that you are interested in and the window of dates you would like to view.
+</div>
+
+<div class = "disp" style =  "padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;">
+
+<iframe width="80%" height="1700" frameborder="0"
+  src="https://observablehq.com/embed/@jeff-zheng/w209-final-project-table-selection?cells=viewof+yAttr%2Cviewof+graphDates%2Cviewof+lastDate%2CdateRange%2Clegend%2Cchart%2CselectRows%2Cviewof+rows"></iframe>
+  
+</div>
+<!-- 
+<div class="row" style="display:flex; flex-direction: row; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:900px; margin-left: 7%;
+    margin-right: 7%;
+        margin-top: 13%;
+    text-align: left; font: Calibri;" ><br>
+
+<div id="observablehq-02fccdf8">
+  <div class="observablehq-viewof-yAttr"></div>
+  <div class="observablehq-yAttr"></div>
+  <div class="observablehq-viewof-graphDates"></div>
+  <div class="observablehq-graphDates"></div>
+  <div class="observablehq-viewof-lastDate"></div>
+  <div class="observablehq-lastDate"></div>
+  <div class="observablehq-dateRange"></div>
+  <div class="observablehq-legend"></div>
+  <div class="observablehq-chart"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@jeff-zheng/w209-final-project-table-selection.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "viewof yAttr") return Inspector.into("#observablehq-02fccdf8 .observablehq-viewof-yAttr")();
+    if (name === "yAttr") return Inspector.into("#observablehq-02fccdf8 .observablehq-yAttr")();
+    if (name === "viewof graphDates") return Inspector.into("#observablehq-02fccdf8 .observablehq-viewof-graphDates")();
+    if (name === "graphDates") return Inspector.into("#observablehq-02fccdf8 .observablehq-graphDates")();
+    if (name === "viewof lastDate") return Inspector.into("#observablehq-02fccdf8 .observablehq-viewof-lastDate")();
+    if (name === "lastDate") return Inspector.into("#observablehq-02fccdf8 .observablehq-lastDate")();
+    if (name === "dateRange") return Inspector.into("#observablehq-02fccdf8 .observablehq-dateRange")();
+    if (name === "legend") return Inspector.into("#observablehq-02fccdf8 .observablehq-legend")();
+    if (name === "chart") return Inspector.into("#observablehq-02fccdf8 .observablehq-chart")();
+  });
+</script>
+
+
+
+<div id="observablehq-44e08294">
+  <div class="observablehq-selectRows"></div>
+  <div class="observablehq-viewof-rows"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@jeff-zheng/w209-final-project-table-selection.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "selectRows") return Inspector.into("#observablehq-44e08294 .observablehq-selectRows")();
+    if (name === "viewof rows") return Inspector.into("#observablehq-44e08294 .observablehq-viewof-rows")();
+  });
+</script>
+
+ -->
+</div>
+
+</body>
+</html>

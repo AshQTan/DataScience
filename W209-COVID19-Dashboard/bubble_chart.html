@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bubble Chart</title>
+  <link rel="stylesheet" href="textstyles.css">
+
+</head>
+<body>
+
+
+
+
+<div class="row" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    height:800px; width:300px;
+    margin-right: 2%;
+        margin-top: 2%;
+    text-align: left; font: Calibri; display: inline-block;
+vertical-align: right;
+float: right;" ><br>
+
+
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font: Calibri" >
+
+  <a href = "index.html"> <img src="images/house.png" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+
+<!--   <p>Web Designer</p>
+ -->  
+   <span class="tooltiptext2">Home</span>
+
+</div>
+
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font: Calibri" >
+
+  <a href = "line_chart.html"> <img src="images/linechart.jpg" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+
+<!--   <p>Web Designer</p>
+ -->  
+   <span class="tooltiptext2">Line Chart</span>
+
+</div>
+
+
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font: Calibri" >
+  <a href = "maps.html"> <img src="images/world.png" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+<!--   <p>Boss man</p>
+ -->  
+    <span class="tooltiptext2">Maps</span>
+
+</div>
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font: Calibri" >
+  <a href = "bubble_chart.html"> <img src="images/bubbles.jpg" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+<!--   <p>Support</p>
+ -->  
+    <span class="tooltiptext2">Bubble Chart</span>
+</div>
+
+<div class="tooltip2" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:300px; 
+    margin-right: 2%;
+    text-align: center;font-family: Calibri" >
+  <a href = "timeline.html"> <img src="images/timeline.jpg" alt="Boss" style="width:20%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+<!--   <p>Fixer</p>
+ -->  
+    <span class="tooltiptext2">Timeline</span>
+
+</div>
+
+</div>
+
+
+
+<h3 style = "
+  padding-left: 3%;
+  padding-right: 3%; width: 800px; padding-top: 4%; text-align:left">Bubble Chart</h4>
+
+<div class = "description" style = "padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%; width: 800px; font-family: Verdana">
+
+
+The bubble chart below gives you the option to see how up to the top 100 countries in the world are doing on vaccination! Larger bubbles means that country is doing really well on that vaccination metric compared to other countries. Hover your mouse over each bubble to see the specific number of vaccinations! 
+</div>
+
+
+
+<div class = "disp" style =  "padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;">
+
+  <div id="observablehq-50786e97">
+  <div class="observablehq-viewof-dd"></div>
+  <div class="observablehq-viewof-code"></div>
+  <div class="observablehq-viewof-a3"></div>
+  <div class="observablehq-a"></div>
+  <div class="observablehq-chart"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@jackww/bubble-chart.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "viewof dd") return Inspector.into("#observablehq-50786e97 .observablehq-viewof-dd")();
+    if (name === "viewof code") return Inspector.into("#observablehq-50786e97 .observablehq-viewof-code")();
+    if (name === "viewof a3") return Inspector.into("#observablehq-50786e97 .observablehq-viewof-a3")();
+    if (name === "a") return Inspector.into("#observablehq-50786e97 .observablehq-a")();
+    if (name === "chart") return Inspector.into("#observablehq-50786e97 .observablehq-chart")();
+  });
+</script>
+
+</div>
+</body>
+</html>

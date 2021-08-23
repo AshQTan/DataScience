@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COVID-19 Dashboard</title>
+  <link rel="stylesheet" href="textstyles.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h1>COVID-19 Visualization Dashboard</h1>
+  <h2>W209 Project</h2>
+
+
+
+
+<div class="row" style="display:flex; flex-direction: row; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:900px; margin-left: auto;
+    margin-right: auto;
+        margin-top: 5%;
+    text-align: left; font: Calibri;" ><br>
+
+<div class="tooltip" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:900px; margin-left: auto;
+    margin-right: auto;
+    text-align: center;font: Calibri" >
+
+  <a href = "line_chart.html"> <img src="images/linechart.jpg" alt="Boss" style="width:50%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+
+  <h3>Line Chart</h3>
+<!--   <p>Web Designer</p>
+ -->  
+   <span class="tooltiptext">Compare the COVID-19 pandemic between countries over time. Made by Jeff.</span>
+
+</div>
+
+
+
+<div class="tooltip" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:900px; margin-left: auto;
+    margin-right: auto;
+    text-align: center;font: Calibri" >
+  <a href = "maps.html"> <img src="images/world.png" alt="Boss" style="width:50%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+  <h3>Maps</h3>
+<!--   <p>Boss man</p>
+ -->  
+    <span class="tooltiptext">Watch the spread of COVID-19 across the world and the US. Made by Ash.</span>
+
+</div>
+
+<div class="tooltip" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:900px; margin-left: auto;
+    margin-right: auto;
+    text-align: center;font: Calibri" >
+  <a href = "bubble_chart.html"> <img src="images/bubbles.jpg" alt="Boss" style="width:50%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+  <h3>Bubble Chart</h3>
+<!--   <p>Support</p>
+ -->  
+    <span class="tooltiptext">Compare vaccination metrics of different countries. Made by Jack.</span>
+</div>
+
+<div class="tooltip" style="display:flex; flex-direction: column; justify-content: center; align-items: center; /*margin:0 auto;*/
+    width:900px; margin-left: auto;
+    margin-right: auto;
+    text-align: center;font-family: Calibri" >
+  <a href = "timeline.html"> <img src="images/timeline.jpg" alt="Boss" style="width:50%; border-radius: 7%; border:  5px solid #555;" class="w3-circle w3-hover-opacity"></a>
+  <h3>Timeline</h3>
+<!--   <p>Fixer</p>
+ -->  
+    <span class="tooltiptext">See timeline of events during the COVID-19 pandemic. Made by Wesley.</span>
+
+</div>
+
+</div>
+
+
+
+ <div class = "subtitle" style = "width: 600px; margin-left: auto; margin-right: auto; padding-top:3%; font-family: Verdana;">
+In this project, we hope to explore the spread of COVID-19 and the global vaccination effort. We hope that this will be informative to the general public and help increase public willingness to take the COVID vaccine.
+
+</div>
+
+<div class="padding" style = "height: 20px;">
+</div>
+
+
+<div class= "aboutpagelink">
+  <a href = "about.html" style = "color: black;">  <h3 style = "font-size: 20px">About us</h3> </a>
+</div>
+
+<div class= "aboutpagelink">
+  <a href = "data.html" style = "color: black;">  <h3 style = "font-size: 20px">Data</h3> </a>
+</div>
+
+
+<div class="padding" style = "height: 30px;">
+</div>
+<!-- 
+<h3>Line Chart (Jeff) </h3>
+<iframe width="100%" height="1302" frameborder="0"
+  src="https://observablehq.com/embed/@jeff-zheng/w209-final-project-table-selection?cells=viewof+yAttr%2Cviewof+graphDates%2Cviewof+lastDate%2CdateRange%2Clegend%2Cchart%2CselectRows%2Cviewof+rows"></iframe>
+
+<h3>Bubble Chart (Jack)</h3>
+  <div id="observablehq-50786e97">
+  <div class="observablehq-viewof-dd"></div>
+  <div class="observablehq-viewof-code"></div>
+  <div class="observablehq-viewof-a3"></div>
+  <div class="observablehq-a"></div>
+  <div class="observablehq-chart"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@jackww/bubble-chart.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "viewof dd") return Inspector.into("#observablehq-50786e97 .observablehq-viewof-dd")();
+    if (name === "viewof code") return Inspector.into("#observablehq-50786e97 .observablehq-viewof-code")();
+    if (name === "viewof a3") return Inspector.into("#observablehq-50786e97 .observablehq-viewof-a3")();
+    if (name === "a") return Inspector.into("#observablehq-50786e97 .observablehq-a")();
+    if (name === "chart") return Inspector.into("#observablehq-50786e97 .observablehq-chart")();
+  });
+</script>
+
+<h3>Pandemic Timeline (Wesley)</h3>
+
+<div id="observablehq-eda2c51d">
+  <div class="observablehq-viewof-eventsSelection"></div>
+  <div class="observablehq-DiDoesDigital2020Timeline"></div>
+  <div class="observablehq-tooltipStyles"></div>
+  <div class="observablehq-typographyStyles"></div>
+  <div class="observablehq-chartStyles"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@weskwong2/interactive-covid-timeline.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "viewof eventsSelection") return Inspector.into("#observablehq-eda2c51d .observablehq-viewof-eventsSelection")();
+    if (name === "DiDoesDigital2020Timeline") return Inspector.into("#observablehq-eda2c51d .observablehq-DiDoesDigital2020Timeline")();
+    if (name === "tooltipStyles") return Inspector.into("#observablehq-eda2c51d .observablehq-tooltipStyles")();
+    if (name === "typographyStyles") return Inspector.into("#observablehq-eda2c51d .observablehq-typographyStyles")();
+    if (name === "chartStyles") return Inspector.into("#observablehq-eda2c51d .observablehq-chartStyles")();
+  });
+</script>
+
+ -->
+</body>
+</html>
